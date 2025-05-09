@@ -1,0 +1,76 @@
+.container-header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  min-height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
+
+  h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .profile-img {
+    margin: 1rem;
+
+    img {
+      margin: 15px auto;
+      display: block;
+      width: 150px;
+      border: 8px solid
+        color-mix(in srgb, var(--default-color), transparent 85%);
+      border-radius: 50%;
+    }
+  }
+
+  .social-links {
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+
+    a {
+      font-size: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: color-mix(in srgb, var(--default-color), transparent 90%);
+      color: var(--default-color);
+      margin: 0 2px;
+      border-radius: 50%;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: var(--contrast-color);
+      background: var(--accent-color);
+    }
+  }
+
+  .navmenu {
+    padding: 0;
+
+    ul {
+      list-style: none;
+      padding: 1.5rem;
+      a {
+        color: var(--nav-color);
+        padding: 15px 10px;
+        font-family: var(--nav-font);
+        font-size: 18px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        transition: 0.3s;
+        width: 100%;
+
+        .icon {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+}

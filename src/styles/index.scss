@@ -1,0 +1,71 @@
+//config default
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//scroll behavior
+html {
+  scroll-behavior: smooth;
+}
+
+//remove traço dos links (a)
+a {
+  text-decoration: none;
+}
+
+//remove ponto da listas
+li {
+  list-style-type: none;
+}
+
+//body
+body {
+  color: #f3f4f6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  max-width: 1440px;
+  background-color: silver;
+}
+
+//global colors
+:root {
+  --background-color: #ffffff;
+  --default-color: #272829;
+  --heading-color: #050d18;
+  --accent-color: #149ddd;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+}
+:root {
+  --nav-color: #a8a9b4;
+  --nav-hover-color: #ffffff;
+  --nav-mobile-background-color: #040b14;
+  --nav-dropdown-background-color: #040b14;
+  --nav-dropdown-color: #a8a9b4;
+  --nav-dropdown-hover-color: #ffffff;
+}
+.light-background {
+  --background-color: #f4fafd;
+  --surface-color: #ffffff;
+}
+.dark-background {
+  --background-color: #040b14;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #151f2b;
+  --contrast-color: #ffffff;
+}
+
+//defini largura 100% para todas as imagens
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.navmenu ul li a {
+  &.active {
+    color: #ffc024; // Cor quando ativo
+    font-weight: bold;
+  }
+}

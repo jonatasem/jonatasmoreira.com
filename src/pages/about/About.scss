@@ -1,0 +1,100 @@
+.container-about {
+  article {
+    &:first-child {
+      margin-bottom: 2rem;
+    }
+  }
+
+  img {
+    max-width: 300px;
+  }
+
+  .profile-about {
+    display: flex;
+
+    .profile-autor {
+      width: 40%;
+    }
+
+    .content {
+      width: 60%;
+      text-align: end;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      h2 {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      .about-info {
+        margin: 1rem 0;
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+
+            strong {
+              margin-right: 10px;
+            }
+
+            i {
+              font-size: 16px;
+              margin-right: 5px;
+              color: var(--accent-color);
+              line-height: 0;
+            }
+          }
+        }
+      }
+
+      .container-languages {
+        h2 {
+          font-size: 20px;
+          margin-bottom: 0.5rem;
+        }
+
+        ul {
+          li {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .container-about {
+    .profile-about {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      .profile-autor {
+        width: 100%;
+        text-align: start;
+      }
+
+      .content {
+        width: 100%;
+      }
+
+      // Faz a imagem não transbordar
+      .profile-autor {
+        margin: 0;
+
+        img {
+          max-width: 90%;
+          height: auto; // Adicionei para manter a proporção da imagem
+        }
+      }
+    }
+  }
+}
