@@ -50,7 +50,7 @@ export default function Skills() {
             <li data-aos="fade-up">Docker</li>
             <li data-aos="fade-up">CI/CD</li>
             <li data-aos="fade-up">WebPack</li>
-            <li data-aos="fade-up">Linus</li>
+            <li data-aos="fade-up">Linux</li>
             <li data-aos="fade-up">Windows</li>
           </ul>
         </div>

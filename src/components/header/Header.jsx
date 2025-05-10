@@ -36,7 +36,7 @@ export default function Header({ activeMenu, onMenuClick, mobClick }) {
           <FaFacebook />
         </a>
         <a
-          href="https://www.instagram.com/jonatasemoreira01/"
+          href="https://www.instagram.com/jonatas.e.moreira/"
           className="instagram"
         >
           <FaInstagram />
@@ -47,7 +47,7 @@ export default function Header({ activeMenu, onMenuClick, mobClick }) {
         >
           <FaWhatsapp />
         </a>
-        <a href="https://www.figma.com" className="figma">
+        <a href="https://www.figma.com/@jonatas11" className="figma">
           <FaFigma />
         </a>
       </div>
