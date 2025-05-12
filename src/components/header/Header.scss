@@ -74,3 +74,20 @@
     }
   }
 }
+
+@media (max-width:499px) {
+  .container-header {
+    .social-links {
+      a {
+        font-size: 15px;
+      }
+    }
+    .navmenu {
+      ul {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
