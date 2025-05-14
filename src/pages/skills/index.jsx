@@ -1,11 +1,17 @@
-import "./Skills.scss";
+import "./index.scss";
+
+import { useTranslation } from "react-i18next";
 
 export default function Skills() {
+
+  const { t } = useTranslation();
+
+
   return (
     <section id="skills" className="container-skills light-background">
       <article className="container section-title">
         <h2 data-aos="fade-up" data-aos-delay="100">
-          Habilidades
+          {t("skills")}
         </h2>
       </article>
 
@@ -34,7 +40,7 @@ export default function Skills() {
         </div>
         <div className="data-bases">
           <h3 data-aos="fade-up">D</h3>
-          <h2 data-aos="fade-up">Databases</h2>
+          <h2 data-aos="fade-up">{t("database")}</h2>
           <ul>
             <li data-aos="fade-up">SQLServer</li>
             <li data-aos="fade-up">PostgreSQL</li>
@@ -44,7 +50,7 @@ export default function Skills() {
         </div>
         <div className="tolls-ops">
           <h3 data-aos="fade-up">T</h3>
-          <h2 data-aos="fade-up">Tools & DevOps</h2>
+          <h2 data-aos="fade-up">{t("tools")}</h2>
           <ul>
             <li data-aos="fade-up">Git</li>
             <li data-aos="fade-up">Docker</li>

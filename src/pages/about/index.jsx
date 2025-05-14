@@ -1,17 +1,22 @@
-import "./About.scss";
+import "./index.scss";
 
 import imgAutor from "../../assets/img/my-profile.jpg";
 import { FaAngleRight } from "react-icons/fa";
 
+import { useTranslation } from "react-i18next";
+
 export default function About() {
+
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="container-about section">
       <article className="section-title">
         <h2 data-aos="fade-up" data-aos-delay="100">
-          Sobre Mim
+          {t("about")}
         </h2>
         <p data-aos="fade-up" data-aos-delay="100">
-        Desenvolvedor Fullstack com experiência em criação de sistemas responsivos e escaláveis, buscando novas oportunidades para aplicar habilidades em desenvolvimento front-end e back-end.
+          {t("resumeAbout")}
         </p>
       </article>
       <article className="profile-about">
@@ -28,7 +33,7 @@ export default function About() {
             Jonatas Elieser Moreira
           </h2>
           <p data-aos="fade-up" data-aos-delay="100">
-            Desenvolvedor FullStack / DevOps
+            {t("functionAbout")}
           </p>
 
           {/*Section Contact Info*/}
@@ -36,12 +41,12 @@ export default function About() {
             <ul data-aos="fade-up" data-aos-delay="100">
               <li>
                 <FaAngleRight />
-                <strong>Email:</strong>
+                <strong>{t("email")}:</strong>
                 <span>jonatas.em25@gmail.com</span>
               </li>
               <li>
                 <FaAngleRight />
-                <strong>Freelance:</strong> <span>Disponível</span>
+                <strong>{t("freelance")}:</strong> <span>{t("available")}</span>
               </li>
             </ul>
           </div>
@@ -52,16 +57,16 @@ export default function About() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <h2>Idiomas</h2>
+            <h2>{t("language")}</h2>
             <ul>
               <li>
-                <p>Português - Nativo</p>
+                <p>{t("portuguese")}</p>
               </li>
               <li>
-                <p>Inglês - B1</p>
+                <p>{t("english")}</p>
               </li>
               <li>
-                <p>Espanhol - A2</p>
+                <p>{t("spanish")}</p>
               </li>
             </ul>
           </div>

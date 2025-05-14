@@ -1,8 +1,11 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-import "./Home.scss";
+import "./index.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="container-home dark-background">
       <div className="container">
@@ -10,9 +13,9 @@ export default function Home() {
           Jonatas Elieser Moreira
         </h2>
         <p data-aos="fade-up" data-aos-delay="200">
-          Eu trabalho com{" "}
+          {t("home-title")}{" "}
           <ReactTyped
-            strings={["Frontend", "Backend", "DataBase"]}
+            strings={[t("frontend"), t("backend"), t("database")]}
             typeSpeed={100}
             backSpeed={80}
             loop

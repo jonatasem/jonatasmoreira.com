@@ -23,7 +23,7 @@
 
       p {
         font-size: 45px;
-        color: silver;
+        color: color-mix(in srgb, var(--default-color), transparent 70%);
       }
     }
   }

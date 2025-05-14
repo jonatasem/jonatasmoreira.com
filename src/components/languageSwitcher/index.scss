@@ -1,0 +1,25 @@
+
+.language-switcher {
+    button {
+        padding: 0.5rem;
+        background-color: #c0c0c05e;
+        color: silver;
+        border: transparent;
+        border-radius: 0.2rem;
+        cursor: pointer;
+
+        &:first-child {
+            margin-right: 0.5rem;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+
+        
+    }
+
+    .active-language {
+        color: #ffc024;
+    }
+}

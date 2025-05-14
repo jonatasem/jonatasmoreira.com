@@ -1,25 +1,22 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useScrollMenu } from "./components/useScrollMenu/useSrollMenu"; // Importando o hook
 import "./styles/App.scss";
 
-// Imports Components
-import Mobile from "./components/mobile/Mobile";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-
-// Imports Pages
-import About from "./pages/about/About";
-import Skills from "./pages/skills/Skills";
-import Home from "./pages/home/Home";
-import Resume from "./pages/resume/Resume";
-import Portfolio from "./pages/portfolio/Portfolio";
-import ScrollToTop from "./components/scroll/ScrollToTop";
+import { useScrollMenu } from "./components/useScrollMenu";
+import Mobile from "./components/mobile";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import About from "./pages/about";
+import Skills from "./pages/skills";
+import Home from "./pages/home";
+import Resume from "./pages/resume";
+import Portfolio from "./pages/portfolio";
+import ScrollToTop from "./components/scroll";
 
 export default function App() {
   const [mobile, setMobile] = useState(false);
-  const [activeMenu, setActiveMenu] = useScrollMenu(); // Usando o hook para gerenciar o menu ativo
+  const [activeMenu, setActiveMenu] = useScrollMenu();
 
   const toggleMobileMenu = () => {
     setMobile((prev) => !prev);

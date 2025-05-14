@@ -1,4 +1,6 @@
-import "./Portfolio.scss";
+import "./index.scss";
+
+import { useTranslation } from "react-i18next";
 
 import imgGraphic from "../../assets/img/projects/graphic.png";
 import imgApiMovies from "../../assets/img/projects/api-movies.png";
@@ -9,6 +11,9 @@ import imgCologneseTwo from "../../assets/img/projects/colognese-client.png";
 import { useState } from "react";
 
 export default function Portfolio() {
+
+  const { t } = useTranslation();
+
   const [filter, setFilter] = useState("*");
 
   const handleFilterClick = (filterValue) => {
@@ -19,13 +24,10 @@ export default function Portfolio() {
     <section id="portfolio" className="container-portfolio light-background">
       <div className="section-title portfolio-header">
         <h2 data-aos="fade-up" data-aos-delay="100">
-          Portfólio
+          {t("portfolio")}
         </h2>
         <p data-aos="fade-up" data-aos-delay="100">
-          Aqui estão alguns dos projetos que desenvolvi ao longo da minha
-          carreira. Cada um deles reflete minha paixão por criar soluções
-          eficazes e inovadoras, utilizando as melhores práticas de
-          desenvolvimento e design.
+          {t("portfolioResume")}
         </p>
       </div>
       <div
@@ -37,25 +39,25 @@ export default function Portfolio() {
           className={filter === "*" ? "active" : ""}
           onClick={() => handleFilterClick("*")}
         >
-          Todos
+          {t("all")}
         </button>
         <button
           className={filter === ".front-end" ? "active" : ""}
           onClick={() => handleFilterClick(".front-end")}
         >
-          Front End
+          FrontEnd
         </button>
         <button
           className={filter === ".back-end" ? "active" : ""}
           onClick={() => handleFilterClick(".back-end")}
         >
-          Back End
+          BackEnd
         </button>
         <button
           className={filter === ".full-stack" ? "active" : ""}
           onClick={() => handleFilterClick(".full-stack")}
         >
-          Full Stack
+          FullStack
         </button>
       </div>
       <div className="portfolio-items" data-aos="fade-up" data-aos-delay="100">
@@ -87,13 +89,6 @@ const projects = [
     filterClass: "front-end",
     linkProject: "https://graphic-gray.vercel.app/",
     linkGitHub: "https://github.com/jonatasem/graphic",
-  },
-  {
-    imgSrc: imgColognese,
-    title: "Colognese Brigaderia",
-    filterClass: "front-end",
-    linkProject: "https://colognese-brigaderia.vercel.app/",
-    linkGitHub: "https://github.com/jonatasem/colognese",
   },
   {
     imgSrc: imgEcommerce,
