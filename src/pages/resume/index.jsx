@@ -78,7 +78,6 @@ export default function Resume() {
               <ul>
                 <li>{t("experienceOneDescript")}</li>
                 <li>{t("experienceOneDescriptTwo")}</li>
-                <li>{t("experienceOneDescriptTree")}</li>
               </ul>
             </div>
             <div
@@ -93,8 +92,6 @@ export default function Resume() {
               </p>
               <ul>
                <li>{t("experienceTwoDescript")}</li>
-               <li>{t("experienceTwoDescriptTwo")}</li>
-               <li>{t("experienceTwoDescriptTree")}</li>
               </ul>
             </div>
           </div>

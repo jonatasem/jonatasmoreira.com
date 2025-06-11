@@ -4,11 +4,12 @@ import { useTranslation } from "react-i18next";
 
 import imgGraphic from "../../assets/img/projects/graphic.png";
 import imgApiMovies from "../../assets/img/projects/api-movies.png";
-import imgColognese from "../../assets/img/projects/colognese.png";
+import imgRestauranteDelicia from "../../assets/img/projects/restaurante-delicia.png"
 import imgEcommerce from "../../assets/img/projects/e-commerce.png";
 import imgLookClient from "../../assets/img/projects/look-client.png";
 import imgCologneseTwo from "../../assets/img/projects/colognese-client.png";
 import { useState } from "react";
+import imgProjetoIntegrador from "../../assets/img/projects/projeto-integrador.png";
 
 export default function Portfolio() {
 
@@ -118,6 +119,20 @@ const projects = [
     linkProject: "https://client-colognese.vercel.app/",
     linkGitHub: "https://github.com/jonatasem/server-colognese",
   },
+  {
+    imgSrc: imgRestauranteDelicia,
+    title: "Restaurante Delicia",
+    filterClass: "full-stack",
+    linkProject: "https://client-ecommerce-omega.vercel.app/",
+    linkGitHub: "https://github.com/jonatasem/client-ecommerce",
+  },
+    {
+    imgSrc: imgProjetoIntegrador,
+    title: "Projeto Integrador",
+    filterClass: "full-stack",
+    linkProject: "https://client-automec-pi-2025.vercel.app/",
+    linkGitHub: "https://github.com/jonatasem/dashboard-admin",
+  }
 ];
 
 function PortfolioItem({
